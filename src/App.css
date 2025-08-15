@@ -62,55 +62,44 @@
   pointer-events: auto;
 }
 
+df-messenger {
+  --df-messenger-button-titlebar-color: #d6b3e4; 
+}
+
 @media (max-width: 767px) {
   
-  /* --- Header Section --- */
-
-  /* Adjust header layout for vertical stacking */
   header {
-    align-items: flex-start; /* Align content to the top */
-    padding-top: 8rem; /* Add space for the fixed navigation bar */
+    align-items: flex-start; 
+    padding-top: 8rem; 
     padding-bottom: 4rem;
-    min-height: auto; /* Allow header to shrink vertically */
+    min-height: auto; 
   }
 
-  /* Reduce the main "Hungry?" heading size to fit smaller screens */
   header h1:first-of-type {
-    font-size: 4.5rem; /* Equivalent to Tailwind's `text-7xl` */
+    font-size: 4.5rem; 
     line-height: 1;
   }
 
-  /* Reduce the sub-heading size for better balance */
   header h1:last-of-type {
-    font-size: 1.875rem; /* Equivalent to Tailwind's `text-3xl` */
+    font-size: 1.875rem; 
     line-height: 1.2;
   }
 
-  /* Center the image container in the stacked layout */
   header .grid > div:last-child {
     justify-content: center;
     margin-top: 2rem;
   }
 
-  /* Adjust image size to be responsive and not overly large */
   header img {
     width: 90vw;
     height: auto;
-    max-height: 300px; /* Prevent image from being excessively tall */
+    max-height: 300px; 
   }
 
-
-  /* --- Navigation --- */
-
-  /* Slightly reduce the title font size on very small screens */
   nav span {
-    font-size: 1.25rem; /* Equivalent to `text-xl` */
+    font-size: 1.25rem; 
   }
 
-
-  /* --- Features Section --- */
-
-  /* Reduce the title margin for a tighter layout */
   main h2 {
     margin-bottom: 2rem;
   }
