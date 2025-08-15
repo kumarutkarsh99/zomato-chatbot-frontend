@@ -1,0 +1,121 @@
+@import "tailwindcss";
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.hero-blob {
+  width: 520px;
+  height: 520px;
+  filter: blur(20px);
+}
+.glass-card {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.03),
+    rgba(255, 255, 255, 0.02)
+  );
+  backdrop-filter: blur(8px);
+  box-shadow: 0 10px 30px rgba(10, 6, 15, 0.6);
+  border-radius: 18px;
+}
+.floating-chat {
+  position: fixed;
+  right: 20px;
+  bottom: 24px;
+  z-index: 60;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #7c3aed, #9f7aea);
+  color: white;
+  border-radius: 9999px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+.feature-track {
+  scroll-snap-type: x mandatory;
+}
+.feature-track > * {
+  scroll-snap-align: center;
+}
+.chat-container {
+  position: fixed;
+  right: 20px;
+  bottom: 92px;
+  width: 380px;
+  max-width: calc(100% - 32px);
+  height: 520px;
+  transform: translateY(20px) scale(0.98);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 70;
+}
+.chat-container.open {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+@media (max-width: 767px) {
+  
+  /* --- Header Section --- */
+
+  /* Adjust header layout for vertical stacking */
+  header {
+    align-items: flex-start; /* Align content to the top */
+    padding-top: 8rem; /* Add space for the fixed navigation bar */
+    padding-bottom: 4rem;
+    min-height: auto; /* Allow header to shrink vertically */
+  }
+
+  /* Reduce the main "Hungry?" heading size to fit smaller screens */
+  header h1:first-of-type {
+    font-size: 4.5rem; /* Equivalent to Tailwind's `text-7xl` */
+    line-height: 1;
+  }
+
+  /* Reduce the sub-heading size for better balance */
+  header h1:last-of-type {
+    font-size: 1.875rem; /* Equivalent to Tailwind's `text-3xl` */
+    line-height: 1.2;
+  }
+
+  /* Center the image container in the stacked layout */
+  header .grid > div:last-child {
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  /* Adjust image size to be responsive and not overly large */
+  header img {
+    width: 90vw;
+    height: auto;
+    max-height: 300px; /* Prevent image from being excessively tall */
+  }
+
+
+  /* --- Navigation --- */
+
+  /* Slightly reduce the title font size on very small screens */
+  nav span {
+    font-size: 1.25rem; /* Equivalent to `text-xl` */
+  }
+
+
+  /* --- Features Section --- */
+
+  /* Reduce the title margin for a tighter layout */
+  main h2 {
+    margin-bottom: 2rem;
+  }
+
+  footer p{
+    font-size: small;
+  }
+}
