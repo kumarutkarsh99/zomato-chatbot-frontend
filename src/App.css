@@ -63,7 +63,8 @@
 }
 
 df-messenger {
-  --df-messenger-button-titlebar-color: #d6b3e4; 
+  --df-messenger-button-titlebar-color: #9126d9; 
+  --df-messenger-send-icon: #9126d9;
 }
 
 @media (max-width: 767px) {

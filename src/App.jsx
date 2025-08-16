@@ -36,8 +36,6 @@ const FEATURES = [
 ];
 
 export default function App() {
-  const [isChatOpen, setIsChatOpen] = useState(false);
-
   return (
     <div className="relative min-h-screen font-sans overflow-x-hidden bg-gradient-to-br from-[#120016] via-[#2a0538] to-[#11011e] text-violet-100">
       <svg
@@ -59,8 +57,12 @@ export default function App() {
 
       <nav className="flex items-center justify-between p-4 bg-black bg-opacity-20 backdrop-blur-lg fixed w-full z-50 shadow-lg">
         <div className="flex items-center gap-3">
-          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-violet-600 to-violet-400 flex items-center justify-center text-white font-bold">
-            Z
+          <div className="w-8 h-8 rounded-full overflow-hidden bg-[#9126d9]">
+            <img
+              src="/bot-4.png"
+              alt="Zomato Chatbot Logo"
+              className="w-full h-full object-cover"
+            />
           </div>
           <span className="text-xl font-bold text-violet-200">
             Zomato Chatbot
