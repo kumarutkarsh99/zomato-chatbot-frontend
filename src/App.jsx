@@ -166,7 +166,8 @@ export default function App() {
       <footer className="bg-[#0e0314] text-violet-300 py-8 text-center">
         <p className="mb-2 font-semibold">Developed by:</p>
         <p className="font-medium">
-          Kumar Utkarsh &nbsp;|&nbsp; Harsh Maurya &nbsp;|&nbsp; Adarsh Dhakar
+          Kumar Utkarsh &nbsp;|&nbsp; Adarsh Dhakar &nbsp;|&nbsp; Harsh Maurya
+          &nbsp;|&nbsp; Bipasha Ray
         </p>
         <p className="mt-4 text-sm text-violet-400">
           &copy; {new Date().getFullYear()} Zomato Chatbot
