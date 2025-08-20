@@ -81,7 +81,7 @@ export default function App() {
             </h1>
             <p className="mt-6 text-lg text-violet-200 max-w-xl">
               A smarter assistant to discover restaurants, place orders and book
-              tables — tailored to your tastes.
+              tables in BANGALORE — tailored to your tastes.
             </p>
 
             <div className="mt-10 flex gap-6">
