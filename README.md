@@ -1,47 +1,53 @@
 # Zomato Chatbot – Bengaluru Restaurants
+
 [Live Demo](https://zomato-chatbot-frontend.vercel.app/)
 
-A smart conversational chatbot built to simulate Zomato-like functionality, focusing on hotels in **Bengaluru**.  
+A smart conversational chatbot built to simulate Zomato-like functionality, focusing on restaurants in **Bengaluru**.  
 Users can interact with the bot to **track orders, book dine-ins, and order food**, all via natural language using **Dialogflow**.
 
 ## Table of Contents
-1. [Overview](#overview)  
-2. [Features](#features)  
-3. [Tech Stack](#tech-stack)  
-4. [Architecture](#architecture)  
-5. [Setup Instructions](#setup-instructions)  
-6. [Environment Variables](#environment-variables)  
-7. [Future Improvements](#future-improvements)  
-8. [Contributors](#contributors)  
+
+1. [Overview](#overview)
+2. [Features](#features)
+3. [Tech Stack](#tech-stack)
+4. [Architecture](#architecture)
+5. [Setup Instructions](#setup-instructions)
+6. [Environment Variables](#environment-variables)
+7. [Future Improvements](#future-improvements)
+8. [Contributors](#contributors)
 
 ## Overview
-The **Zomato Chatbot** is an AI-powered food ordering and restaurant management assistant designed to help users:  
-- Track online orders  
-- Track dine-in bookings  
-- Book a dine-in table  
-- Order food directly  
+
+The **Zomato Chatbot** is an AI-powered food ordering and restaurant management assistant designed to help users:
+
+- Track online orders
+- Track dine-in bookings
+- Book a dine-in table
+- Order food directly
 - Cancel Order
 - Cancel dine-in
 
 The bot is trained on **Bengaluru hotel data** using the **Zomato Bengaluru 2022 dataset from Kaggle**, combined with custom **Dialogflow intents** and contexts for smooth conversation flows
 
 ## Features
-- **Order Tracking** – Get real-time order status  
-- **Dine-in Tracking** – View dine-in reservations  
-- **Book Dine-in** – Reserve tables at Bengaluru hotels  
-- **Food Ordering** – Order items from menus via chat  
+
+- **Order Tracking** – Get real-time order status
+- **Dine-in Tracking** – View dine-in reservations
+- **Book Dine-in** – Reserve tables at Bengaluru hotels
+- **Food Ordering** – Order items from menus via chat
 - **Cancel Order** - Cancel ongoing orders or previous orders
 - **Cancel Dine-in** - Cancel dine-in bookings
-- **Natural Language Processing** – Powered by Dialogflow  
-- **Dataset:** [Zomato Bengaluru 2022 – Kaggle](https://www.kaggle.com/datasets/vora1011/zomato-bangalore-restaurants-2022)  
-- **Persistent Data Storage** – PostgreSQL via Supabase  
+- **Natural Language Processing** – Powered by Dialogflow
+- **Dataset:** [Zomato Bengaluru 2022 – Kaggle](https://www.kaggle.com/datasets/vora1011/zomato-bangalore-restaurants-2022)
+- **Persistent Data Storage** – PostgreSQL via Supabase
 
 ## Tech Stack
-- **Frontend:** React.js  
-- **Backend:** NestJS  
-- **Database:** PostgreSQL (Supabase)  
-- **NLP Engine:** Dialogflow ES  
-- **Hosting:** Render (Backend) , Vercel (Frontend) 
+
+- **Frontend:** React.js
+- **Backend:** NestJS
+- **Database:** PostgreSQL (Supabase)
+- **NLP Engine:** Dialogflow ES
+- **Hosting:** Render (Backend) , Vercel (Frontend)
 
 ## Architecture
 
@@ -71,10 +77,11 @@ The bot is trained on **Bengaluru hotel data** using the **Zomato Bengaluru 2022
 ## Setup Instructions
 
 ### Clone the repository
+
 ```bash
 git clone https://github.com/your-repo/zomato-chatbot.git
 cd zomato-chatbot
-````
+```
 
 ### Install dependencies
 
@@ -94,13 +101,13 @@ npm install
 
 ### Setup Database (Supabase / PostgreSQL)
 
-* Create a Supabase project
-* Run SQL scripts
+- Create a Supabase project
+- Run SQL scripts
 
 ### Configure Dialogflow
 
-* Create Dialogflow ES agent
-* Create Intents/Context
+- Create Dialogflow ES agent
+- Create Intents/Context
 
 ### Run locally
 
@@ -131,12 +138,13 @@ DATABASE_URL=your_database_url
 
 ## Future Improvements
 
-* Support for **multiple cities**
-* **Payment gateway integration**
-* **Voice command support**
-* **User authentication**
+- Support for **multiple cities**
+- **Payment gateway integration**
+- **Voice command support**
+- **User authentication**
 
 ## Contributors
+
 - Kumar Utkarsh
 - Adarsh Dhakar
 - Harsh Maurya
